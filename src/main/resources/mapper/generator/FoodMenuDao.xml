@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.FoodMenuDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.generator.entity.FoodMenuEntity" id="foodMenuMap">
+        <result property="id" column="id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="isDeleted" column="is_deleted"/>
+        <result property="foodName" column="food_name"/>
+        <result property="foodType" column="food_type"/>
+        <result property="foodTag" column="food_tag"/>
+        <result property="foodPrice" column="food_price"/>
+        <result property="foodPicture" column="food_picture"/>
+        <result property="supplyType" column="supply_type"/>
+    </resultMap>
+
+
+</mapper>

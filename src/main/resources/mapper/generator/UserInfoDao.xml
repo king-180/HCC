@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.UserInfoDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.generator.entity.UserInfoEntity" id="userInfoMap">
+        <result property="id" column="id"/>
+        <result property="craeteBy" column="craete_by"/>
+        <result property="craeteTime" column="craete_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="staffName" column="staff_name"/>
+        <result property="staffSex" column="staff_sex"/>
+        <result property="staffAge" column="staff_age"/>
+        <result property="staffId" column="staff_id"/>
+        <result property="staffType" column="staff_type"/>
+        <result property="entryTime" column="entry_time"/>
+        <result property="operateName" column="operate_name"/>
+        <result property="duty" column="duty"/>
+        <result property="positionalTitle" column="positional_title"/>
+        <result property="brief" column="brief"/>
+        <result property="phoneNumber" column="phone_number"/>
+    </resultMap>
+
+
+</mapper>

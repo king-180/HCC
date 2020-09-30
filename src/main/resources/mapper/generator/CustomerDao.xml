@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="io.renren.modules.generator.dao.CustomerDao">
+
+    <!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="io.renren.modules.generator.entity.CustomerEntity" id="customerMap">
+        <result property="id" column="id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="isDeleted" column="is_deleted"/>
+        <result property="customerName" column="customer_name"/>
+        <result property="customerAge" column="customer_age"/>
+        <result property="customerSex" column="customer_sex"/>
+        <result property="idcard" column="idcard"/>
+        <result property="roomNumber" column="room_number"/>
+        <result property="buildingId" column="building_id"/>
+        <result property="recordId" column="record_id"/>
+        <result property="elderType" column="elder_type"/>
+        <result property="checkinDate" column="checkin_date"/>
+        <result property="expirationDate" column="expiration_date"/>
+        <result property="contactTel" column="contact_tel"/>
+        <result property="bedId" column="bed_id"/>
+        <result property="psychosomaticState" column="psychosomatic_state"/>
+        <result property="attention" column="attention"/>
+        <result property="birthday" column="birthday"/>
+        <result property="height" column="height"/>
+        <result property="maritalStatus" column="marital_status"/>
+        <result property="weight" column="weight"/>
+        <result property="bloodType" column="blood_type"/>
+        <result property="filepath" column="filepath"/>
+    </resultMap>
+
+    <!--id查询单个-->
+<!--    <select id="queryById" parameterType="java.lang.Integer" resultMap="customerMap">-->
+<!--        select id, create_time, create_by, update_time, update_by, is_deleted, customer_name, customer_age, customer_sex, idcard, room_number, building_id, record_id, elder_type, checkin_date, expiration_date, contact_tel, bed_id, psychosomatic_state, attention, birthday, height, marital_status, weight, blood_type, filepath-->
+<!--            from customer-->
+<!--        <where>-->
+<!--            <if test="id != null and id != ''">-->
+<!--                and id=#{id}-->
+<!--            </if>-->
+<!--        </where>-->
+<!--    </select>-->
+    <!--姓名查询单个-->
+<!--    <select id="selectAll" parameterType="java.lang.String" resultMap="customerMap">-->
+<!--        select id, create_time, create_by, update_time, update_by, is_deleted, customer_name, customer_age, customer_sex, idcard, room_number, building_id, record_id, elder_type, checkin_date, expiration_date, contact_tel, bed_id, psychosomatic_state, attention, birthday, height, marital_status, weight, blood_type, filepath-->
+<!--        from customer-->
+<!--        <where>-->
+<!--            <if test="id != null and id != ''">-->
+<!--                and id=#{id}-->
+<!--            </if>-->
+<!--            <if test="customer_name != null and customer_name != ''">-->
+<!--                and customer_name like concat('%',#{customer_name},'%')-->
+<!--            </if>-->
+<!--        </where>-->
+<!--        where  = #{customer_name}-->
+<!--    </select>-->
+
+
+</mapper>
